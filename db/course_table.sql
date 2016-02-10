@@ -8,4 +8,6 @@ create table course(
     
 )Engine=InnoDb
 
-drop table course;
+drop table course;teachers
+
+select * from teachers

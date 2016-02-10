@@ -5,9 +5,9 @@ create table rel_table(
     c_id int,
     s_id int,
     t_id int,
-    foreign key(c_id) references couse(_id),
-    foreign key(s_id) references couse(_id),
-	foreign key(t_id) references couse(_id)
+    foreign key(c_id) references course(_id),
+    foreign key(s_id) references students(_id),
+	foreign key(t_id) references teachers(_id)
     
 )Engine=InnoDb;
 
