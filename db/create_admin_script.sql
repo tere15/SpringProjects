@@ -1,0 +1,1 @@
+insert into user (username,passwoerd,enagled) values("admin"
