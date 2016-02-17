@@ -22,24 +22,16 @@ public class StudentController {
     
     @RequestMapping(value="/admin/student", method=RequestMethod.GET)
     public String renderStudent(ModelMap map){
-        
-        return "student";
-        
-    }
-    
-    @RequestMapping(value="/admin/student", method=RequestMethod.GET)
-    public String second(ModelMap map){
-        //Render second.jsp
-       map.addAttribute("isLogged", true);
-        map.addAttribute("student", new Students());
+          map.addAttribute("student", new Students());
         try{
-            map.addAttribute("students",StudentDAO.getStudents());
+            map.addAttribute("students", StudentDAO.getStudents());
         }catch(Exception e){
-                e.printStackTrace();
+            e.printStackTrace();
         }
         return "student";
-    } 
+    }
     
+     
     @RequestMapping(value="/admin/student", method=RequestMethod.POST)
     public String addNewStudent(@ModelAttribute("student") Students study, ModelMap map){
         map.addAttribute("isLogged", true);

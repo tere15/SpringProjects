@@ -3,13 +3,15 @@ C:\Repositories\SpringProjects\SpringMVC\MavenBase\src\main\java\com\base\models
 C:\Repositories\SpringProjects\SpringMVC\MavenBase\src\main\java\com\base\DAO\UserDAO.java
 C:\Repositories\SpringProjects\SpringMVC\MavenBase\src\main\java\com\base\models\Teachers.java
 C:\Repositories\SpringProjects\SpringMVC\MavenBase\src\main\java\com\base\config\Config.java
-C:\Repositories\SpringProjects\SpringMVC\MavenBase\src\main\java\com\base\models\Course.java
 C:\Repositories\SpringProjects\SpringMVC\MavenBase\src\main\java\com\base\models\User.java
 C:\Repositories\SpringProjects\SpringMVC\MavenBase\src\main\java\com\base\service\MyUserDetailsService.java
 C:\Repositories\SpringProjects\SpringMVC\MavenBase\src\main\java\com\base\controller\StudentController.java
+C:\Repositories\SpringProjects\SpringMVC\MavenBase\src\main\java\com\base\models\Courses.java
 C:\Repositories\SpringProjects\SpringMVC\MavenBase\src\main\java\com\base\controller\DefaultController.java
 C:\Repositories\SpringProjects\SpringMVC\MavenBase\src\main\java\com\base\models\RelTable.java
+C:\Repositories\SpringProjects\SpringMVC\MavenBase\src\main\java\com\base\DAO\CourseDAO.java
 C:\Repositories\SpringProjects\SpringMVC\MavenBase\src\main\java\com\base\models\UserRoles.java
+C:\Repositories\SpringProjects\SpringMVC\MavenBase\src\main\java\com\base\controller\CourseController.java
 C:\Repositories\SpringProjects\SpringMVC\MavenBase\src\main\java\com\base\config\WebInitializer.java
 C:\Repositories\SpringProjects\SpringMVC\MavenBase\src\main\java\com\base\util\HibernateUtil.java
 C:\Repositories\SpringProjects\SpringMVC\MavenBase\src\main\java\com\base\DAO\TeacherDAO.java

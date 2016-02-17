@@ -10,3 +10,7 @@ create table course(
 
 drop table course;
 
+select * from course
+
+
+

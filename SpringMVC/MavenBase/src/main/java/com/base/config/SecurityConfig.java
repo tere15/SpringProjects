@@ -42,6 +42,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
             .antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')") 
             .antMatchers("/teacher/**").access("hasRole('ROLE_TEACHER') or hasRole('ROLE_ADMIN')") 
             .antMatchers("/student/**").access("hasRole('ROLE_STUDENT') or hasRole('ROLE_ADMIN')")  
+            .antMatchers("/course/**").access("hasRole('ROLE_COURSE') or hasRole('ROLE_ADMIN')")                      
+            .antMatchers("/all/**").access("hasRole('ROLE_ALL') or hasRole('ROLE_ADMIN')")                                          
             //nyt eril. oikeudet polkuihin voidaan määritellä helposti
             .and().formLogin()
             .defaultSuccessUrl("/admin/second")

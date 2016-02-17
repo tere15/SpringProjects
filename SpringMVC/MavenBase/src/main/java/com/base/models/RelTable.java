@@ -10,14 +10,14 @@ public class RelTable  implements java.io.Serializable {
 
 
      private Integer id;
-     private Course course;
+     private Courses course;
      private Students students;
      private Teachers teachers;
 
     public RelTable() {
     }
 
-    public RelTable(Course course, Students students, Teachers teachers) {
+    public RelTable(Courses course, Students students, Teachers teachers) {
        this.course = course;
        this.students = students;
        this.teachers = teachers;
@@ -30,11 +30,11 @@ public class RelTable  implements java.io.Serializable {
     public void setId(Integer id) {
         this.id = id;
     }
-    public Course getCourse() {
+    public Courses getCourse() {
         return this.course;
     }
     
-    public void setCourse(Course course) {
+    public void setCourse(Courses course) {
         this.course = course;
     }
     public Students getStudents() {

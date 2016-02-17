@@ -16,18 +16,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class DefaultController {
+    private boolean isLogged = false;
     
     @RequestMapping(value="/", method=RequestMethod.GET)
     public String index(ModelMap map){
-        //Define attributes you want to use in your template index.js
-        map.addAttribute("isLogged", false);
+
         return "index";
     } 
     
     @RequestMapping(value="/admin/second", method=RequestMethod.GET)
     public String second(ModelMap map){
         //Render second.jsp
-       map.addAttribute("isLogged", true);
+        isLogged = true;
+
         map.addAttribute("teacher", new Teachers());
         try{
             map.addAttribute("teachers",TeacherDAO.getTeachers());
@@ -71,6 +72,12 @@ public class DefaultController {
     @RequestMapping(value="/403", method=RequestMethod.GET)
     public String accessDenied(ModelMap map){
         return "<h1><i>You don/'t have permission to this page</i></h1>";
+        
+    }
+    
+    @ModelAttribute("isLogged")
+    public boolean isLogged(){
+        return isLogged;
     }
     
 }
